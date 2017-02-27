@@ -1,0 +1,216 @@
+﻿/*********************** Buttons and Clickables ************************/
+
+.rButton {
+	-moz-box-shadow: 0px 0px 3px 0px #276873;
+	-webkit-box-shadow: 0px 0px 3px 0px #276873;
+	box-shadow: 0px 0px 3px 0px #276873;
+	background-color:#f7fdff;
+	-moz-border-radius:39px;
+	-webkit-border-radius:39px;
+	border-radius:39px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Courier New;
+	font-size:20px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #3d768a;
+	margin-bottom:10px;
+	text-align:center;
+}
+.rButton:hover {
+	background-color:#ffffff;
+}
+.rButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.optionBox{
+	background-color:#f7fdff; 
+	border-radius:20px; 
+	text-align:center; 
+	font-weight:bold; 
+	max-width:80%;
+}
+
+
+
+
+ .rating {
+          overflow: hidden;
+          display: inline-block;
+      }
+      .rating-input {
+          position: absolute;
+          left: 0;
+          top: -50px;
+      }
+      .rating:hover .rating-star:hover,
+      .rating:hover .rating-star:hover ~ .rating-star,
+      .rating-input:checked ~ .rating-star {
+          background-position: 0 0;
+      }
+      .rating-star,
+      .rating:hover .rating-star {
+          float: right;
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+      }
+
+
+/*********************** Buttons and Clickables ************************/
+.top-bar  {
+  border-color: white transparent transparent transparent;
+}
+/***********************Background**************************/
+
+.BackgroundColor {
+	
+	
+	/*background-color:#D8CDFF;*/
+	background-color:#007fff;
+
+	
+}
+
+.iconsBar{
+	background-color: #ece7ff;
+	border-radius:20px;
+	margin-bottom:10px;
+	max-width: 90%;
+}
+
+/***********************Background**************************/
+
+/****************** Inputs *******************************/
+
+
+
+.userInput{
+        -moz-border-radius: 50px; 
+        -webkit-border-radius: 50px; 
+        border-radius: 50px;
+        background-color: #EAEAEA; 
+        background: -moz-linear-gradient(top, #FFF, #EAEAEA); 
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFF), color-stop(1.0, #EAEAEA)); 
+        border: 1px solid #CACACA; 
+        color: #444; 
+        font-size: 1.4em; 
+        margin: 0 0 25px; 
+        padding: 5px 9px; 
+        width:260px; 
+
+    } 
+.userInput:focus { 
+        background: #FFF;
+        -webkit-box-shadow: 0 0 25px #CCC; 
+        -moz-box-shadow: 0 0 25px #ccc; 
+        box-shadow: 0 0 25px #CCC; 
+        -webkit-transform: scale(1.05); 
+        -moz-transform: scale(1.05); 
+        transform: scale(1.05); 
+    } 
+
+
+
+/************************ TABLES *************************************/
+.CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:25px;
+	-webkit-border-bottom-left-radius:25px;
+	border-bottom-left-radius:25px;
+	
+	-moz-border-radius-bottomright:25px;
+	-webkit-border-bottom-right-radius:25px;
+	border-bottom-right-radius:25px;
+	
+	-moz-border-radius-topright:25px;
+	-webkit-border-top-right-radius:25px;
+	border-top-right-radius:25px;
+	
+	-moz-border-radius-topleft:25px;
+	-webkit-border-top-left-radius:25px;
+	border-top-left-radius:25px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:25px;
+	-webkit-border-bottom-right-radius:25px;
+	border-bottom-right-radius:25px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:25px;
+	-webkit-border-top-left-radius:25px;
+	border-top-left-radius:25px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:25px;
+	-webkit-border-top-right-radius:25px;
+	border-top-right-radius:25px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:25px;
+	-webkit-border-bottom-left-radius:25px;
+	border-bottom-left-radius:25px;
+}.CSSTableGenerator tr:hover td{
+	
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#eae4de; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }.CSSTableGenerator td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:7px;
+	font-size:10px;
+	font-family:Comic Sans MS;
+	font-weight:normal;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+		background:-o-linear-gradient(bottom, #ef70ed 5%, #ef70ed 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ef70ed), color-stop(1, #ef70ed) );
+	background:-moz-linear-gradient( center top, #ef70ed 5%, #ef70ed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef70ed", endColorstr="#ef70ed");	background: -o-linear-gradient(top,#ef70ed,ef70ed);
+
+	background-color:#ef70ed;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Times New Roman;
+	font-weight:bold;
+	color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #ef70ed 5%, #ef70ed 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ef70ed), color-stop(1, #ef70ed) );
+	background:-moz-linear-gradient( center top, #ef70ed 5%, #ef70ed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef70ed", endColorstr="#ef70ed");	background: -o-linear-gradient(top,#ef70ed,ef70ed);
+
+	background-color:#ef70ed;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}/****************** Inputs *******************************/

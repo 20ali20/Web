@@ -1,0 +1,130 @@
+﻿ <HTML>
+      <HEAD>
+        <TITLE>DECODER</TITLE>
+
+        <script type="text/javascript">
+        
+        	var ran1 ;
+          	var ran2 ;
+          	var ran3 ;
+          	var ran4 ;
+          	var ran5;
+          	var num1 ;
+          	var num2 ;
+          	var num3;
+          	var num4 ;
+          	var num5 ;
+
+          function start()
+          { 
+          	 ran1 =Math.floor((Math.random() * 10) );
+          	 ran2 =Math.floor((Math.random() * 10) );
+          	 ran3 =Math.floor((Math.random() * 10) );
+          	 ran4 =Math.floor((Math.random() * 10) );
+          	 ran5 =Math.floor((Math.random() * 10) );
+          	
+          	
+          	alert("The Game has Started");
+          	
+						 
+
+			 
+			 
+                          
+          }
+          
+          function check()
+          {
+          	 num1 = parseInt(document.myform.number1.value);
+          	 num2 = parseInt(document.myform.number2.value);
+          	 num3 = parseInt(document.myform.number3.value);
+          	 num4 = parseInt(document.myform.number4.value);
+          	 num5 = parseInt(document.myform.number5.value);
+           if(num1 == ran1){document.myform.Text1.value='Correct';} else {document.myform.Text1.value='InCorrect';}
+           if(num2 == ran2){document.myform.Text2.value='Correct';} else {document.myform.Text2.value='InCorrect';}
+           if(num3 == ran3){document.myform.Text3.value='Correct';} else {document.myform.Text3.value='InCorrect';}
+           if(num4 == ran4){document.myform.Text4.value='Correct';} else {document.myform.Text4.value='InCorrect';}
+           if(num5 == ran5){document.myform.Text5.value='Correct';} else {document.myform.Text5.value='InCorrect';}
+          }
+         
+		function timer()
+		{
+			var count=100;
+
+			var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+			
+			function timer()
+			{
+			  count=count-1;
+			  if (count < 0)
+			  {
+			     clearInterval(counter);
+			     //counter ended, do something here
+			     return;
+			  }
+			
+				document.myform.Timer.value= count+" seconds ";		
+				
+			if(count ==0){ alert("You LOST");}	
+				}		
+				
+			
+		}
+		
+		      
+        </script>
+        <style type="text/css">
+		.auto-style1 {
+			text-align: center;
+		}
+		.auto-style2 {
+			vertical-align: middle;
+			border-style: solid;
+			border-width: 1px;
+		}
+		</style>
+      </HEAD>
+
+      <BODY>
+	  <img alt="" class="auto-style2" height="178" src="img/bg.jpg" width="100%"><br>
+      		<FORM NAME="myform" style=" border-style: none; border-color: inherit; border-width: thick; background-image:url('img/background.jpg');">
+          	  <div class="auto-style1">
+				  &nbsp;<input id="code" NAME="number1" TYPE="text">&nbsp;&nbsp;&nbsp;&nbsp; 
+          <INPUT TYPE="text" NAME="number2" id="code" VALUE=""/>&nbsp;&nbsp;&nbsp;
+          <INPUT TYPE="text" NAME="number3" id="code" VALUE=""/>&nbsp;&nbsp;&nbsp;
+		  <INPUT TYPE="text" NAME="number4" id="code" VALUE=""/>&nbsp;&nbsp;&nbsp;
+		  <INPUT TYPE="text" NAME="number5" id="code" VALUE=""/>&nbsp;&nbsp;&nbsp; <br>
+			        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <input name="Text1" type="text" value="?????????">&nbsp; &nbsp;&nbsp; 
+			        <input name="Text2" type="text" value="?????????">&nbsp;&nbsp;&nbsp; 
+			        <input name="Text3" type="text" value="?????????">&nbsp;&nbsp;&nbsp; 
+			        <input name="Text4" type="text" value="?????????">&nbsp;&nbsp;&nbsp; 
+			        <input name="Text5" type="text" value="?????????">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <input name="Timer" type="text" value="Timer : 000s"></div>
+
+	</FORM>
+
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        
+        <button style=" background-color:transparent;border-color:transparent; border:0;"  onClick="start(); timer();">
+		<img src="img/start.jpg" height="100"/> </button>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button  style=" background-color:transparent;border-color:transparent; border:0;" onClick="check(); "> 
+		<img src="img/decode.jpg" height="100"/></button>
+        
+        
+                
+
+      <form method="post">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <button name="help" type="button" value="help" onclick="alert('1.Click start to generate a random number code.   2.guess the code and click on Decode 3.make sure time does not runout before you guess the right combination!');
+">HELP</button></form>
+        
+        
+                
+
+      </BODY>
+</HTML>
